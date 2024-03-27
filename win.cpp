@@ -9,5 +9,5 @@ Win::Win()
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->addWidget(area);
     layout->addWidget(btn);
-    connect(btn, SIGNAL(clicked(bool)),this,SLOT(close()));
+    connect(btn,&QPushButton::clicked,this,&Win::close);
 };
